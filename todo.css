@@ -1,0 +1,138 @@
+body{ background: #ced1d8; }
+*{ box-sizing: border-box; }
+.fix{ clear: both;  font-family: monospace}
+/* ==============================*/
+section{
+    margin: 100px auto;
+    width: 400px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: -5px -5px 20px #747373;
+}
+.inpu input[type="text"]{
+    width: 95%;
+    height: 45px;
+    border-radius: 7px;
+    background: #eaeceb;
+    border: none;
+    margin: 10px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 17px;
+    padding-left: 50px;
+}
+.inpu input[type="text"]:focus{
+    background: #d9d9d7;
+}
+.inpu input[type="text"]::placeholder{
+    opacity: .2;
+}
+.inpu{
+    position: relative;
+}
+.lis{
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+}
+.plus{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    visibility: hidden;
+    cursor: pointer;
+}
+.container{
+    /* display: none; */
+    transition: 0.5s;
+    position: relative;
+}
+.container img{
+    opacity: .3;
+}
+.container img:hover{
+    opacity: 1;
+}
+.sp1{
+    float: left;
+}
+.img1{
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+    margin-left: 15px;
+    float: left;
+    cursor: pointer;
+}
+.sp2{
+    float: right;
+    margin-right: 13px;
+}
+hr{
+    width: 95%;
+    border: 1px solid #e2e2e2;
+}
+.sp1:hover,  .sp2:hover,  .left:hover,  .sp4:hover,  .sp5:hover,  .sp6:hover{
+    color: #000;
+}
+input[type="checkbox"]{
+    width: 15px;
+    background: transparent;
+    border-radius: 100px;    
+}
+.left{
+    margin-left: 15px;
+    padding-top: 3px;
+    float: left;
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+}
+.right{
+    float: right;
+    padding-bottom: 10px;
+}
+.sp1, .sp2, .sp4, .sp5, .sp6{
+    margin-right: 13px;
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/*label{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #aaa;
+    border-radius: 50%; 
+    margin-left: 20px; 
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+ label::after{
+    content: "";
+    width: 7px;
+    height: 4px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]{
+    visibility: ;
+}
+input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+    border: 2px solid #000;
+  }
+input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+  }*/
