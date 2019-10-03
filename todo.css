@@ -1,15 +1,28 @@
-body{ background: #ced1d8; }
-*{ box-sizing: border-box; }
-.fix{ clear: both;  font-family: monospace}
+body {
+    background: #ced1d8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fix {
+    clear: both;
+    font-family: monospace
+}
+
+
 /* ==============================*/
-section{
+
+section {
     margin: 100px auto;
     width: 400px;
     background: #fff;
     border-radius: 7px;
     box-shadow: -5px -5px 20px #747373;
 }
-.inpu input[type="text"]{
+
+.inpu input[type="text"] {
     width: 95%;
     height: 45px;
     border-radius: 7px;
@@ -21,44 +34,54 @@ section{
     font-size: 17px;
     padding-left: 50px;
 }
-.inpu input[type="text"]:focus{
+
+.inpu input[type="text"]:focus {
     background: #d9d9d7;
 }
-.inpu input[type="text"]::placeholder{
+
+.inpu input[type="text"]::placeholder {
     opacity: .2;
 }
-.inpu{
+
+.inpu {
     position: relative;
 }
-.lis{
+
+.lis {
     width: 20px;
     height: 25px;
     position: absolute;
     top: 20px;
     left: 24px;
 }
-.plus{
+
+.plus {
     position: absolute;
     top: 20px;
     right: 24px;
     visibility: hidden;
     cursor: pointer;
 }
-.container{
+
+.container {
     /* display: none; */
     transition: 0.5s;
     position: relative;
 }
-.container img{
+
+.container img {
     opacity: .3;
 }
-.container img:hover{
+
+.container img:hover {
     opacity: 1;
 }
-.sp1{
+
+.sp1 {
     float: left;
 }
-.img1{
+
+.img1 {
     width: 15px;
     height: 15px;
     margin-right: 12px;
@@ -66,23 +89,33 @@ section{
     float: left;
     cursor: pointer;
 }
-.sp2{
+
+.sp2 {
     float: right;
     margin-right: 13px;
 }
-hr{
+
+hr {
     width: 95%;
     border: 1px solid #e2e2e2;
 }
-.sp1:hover,  .sp2:hover,  .left:hover,  .sp4:hover,  .sp5:hover,  .sp6:hover{
+
+.sp1:hover,
+.sp2:hover,
+.left:hover,
+.sp4:hover,
+.sp5:hover,
+.sp6:hover {
     color: #000;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     width: 15px;
     background: transparent;
-    border-radius: 100px;    
+    border-radius: 100px;
 }
-.left{
+
+.left {
     margin-left: 15px;
     padding-top: 3px;
     float: left;
@@ -90,16 +123,23 @@ input[type="checkbox"]{
     color: #ccc;
     cursor: pointer;
 }
-.right{
+
+.right {
     float: right;
     padding-bottom: 10px;
 }
-.sp1, .sp2, .sp4, .sp5, .sp6{
+
+.sp1,
+.sp2,
+.sp4,
+.sp5,
+.sp6 {
     margin-right: 13px;
     font-size: 12px;
     color: #ccc;
     cursor: pointer;
 }
+
 
 /*label{
     width: 15px;
