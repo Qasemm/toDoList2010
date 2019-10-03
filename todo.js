@@ -15,8 +15,8 @@ function renderTodos(todos) {
     const html = todos.map(todo => {
         const circleFileName = todo.isCompleted ? 'check_circle_outline.png' : 'fiber_manual_record-24px.png';
         return '<div class="todo">' +
-            '<img id="clo" class="clo" src="' + circleFileName + '">' +
-            '<span>' + todo.text + '</span>' +
+            '<img id="cl" class="cl" src="' + circleFileName + '">' +
+            '<span id="span-txt">' + todo.text + '</span>' +
             '<img id="clo" class="clo" src="cancel-24px.png">' +
             '</div>';
     });
@@ -31,10 +31,14 @@ document.getElementById("txt").addEventListener("keypress", function(ent) {
         );
 
         renderTodos(todos);
+        document.getElementById("txt").value = "";
     }
 
     document.getElementById("plus").style.visibility = "hidden";
+
 });
+
+
 
 document.getElementById("plus").addEventListener("click", function() {
     (document.getElementById("txt").value ? addTodo() : "")
