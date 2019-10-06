@@ -176,3 +176,26 @@ input[type="checkbox"]:checked + label {
 input[type="checkbox"]:checked + label::after {
     opacity: 1;
   }*/
+
+.clo {
+    margin-left: 280px;
+    width: 21px;
+    /* float: right; */
+}
+
+.clo .cl {
+    width: 24px;
+    height: 24px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#span-txt {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+}
