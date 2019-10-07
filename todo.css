@@ -178,9 +178,10 @@ input[type="checkbox"]:checked + label::after {
   }*/
 
 .clo {
-    margin-left: 280px;
+    margin-left: 333px;
     width: 21px;
     /* float: right; */
+    position: absolute;
 }
 
 .clo .cl {
