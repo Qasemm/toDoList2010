@@ -71,4 +71,11 @@ function deleteTodo(event) {
     const index = event.target.getAttribute('data-id');
     todos.splice(index, 1);
     renderTodos(todos);
-}
+};
+
+function clearArray(todos) {
+    while (todos.length) {
+        todos.pop();
+    }
+    renderTodos(todos);
+};
