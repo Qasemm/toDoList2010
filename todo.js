@@ -29,11 +29,16 @@ function renderTodos(todos) {
     document.getElementById("plus").style.visibility = "hidden";
 }
 
-function deleteTodo(event) {
-    let hr = getElementById("delete-");
-    Console.log("hr");
+// function deleteTodo(event) {
+//     for (var i = todos.length - 1; i >= 0; i--) {
+//         if (todos[i] === todos) {
+//             todos.splice(i, 0);
 
-}
+//         }
+//         delete todos[i];
+//     }
+
+// }
 
 document.getElementById("txt").addEventListener("keypress", function(ent) {
     if (ent.keyCode === 13) {
@@ -61,3 +66,9 @@ document.getElementById("plus").addEventListener("click", function() {
     renderTodos(todos);
 
 });
+
+function deleteTodo(event) {
+    const index = event.target.getAttribute('data-id');
+    todos.splice(index, 1);
+    renderTodos(todos);
+}
