@@ -14,11 +14,17 @@ function addTodo(text) {
 
 function renderTodos(todos) {
     const html = todos.map((todo, index) => {
-        const circleFileName = todo.isCompleted ? 'check.png' : 'circle.png';
+        let strikeThrough = '';
+        let circleFileName = 'circle.png';
+
+        if (todo.isCompleted) {
+            strikeThrough = 'strike-through';
+            circleFileName = 'check.png';
+        }
 
         return '<div class="todo">' +
-            '<img class="cl" src="' + circleFileName + '" data-id="' + index + '" onClick="toggleCheck(event) + strikeIt() ">' +
-            '<span id="span-txt">' + todo.text + '</span>' +
+            '<img class="cl" src="' + circleFileName + '" data-id="' + index + '" onClick="toggleCheck(event)">' +
+            '<span id="span-txt" class="' + strikeThrough + '">' + todo.text + '</span>' +
             '<img class="clo" src="cancel-24px.png" data-id="' + index + '" onClick="deleteTodo(event)">' +
             '</div>';
     });
@@ -70,13 +76,3 @@ function clearChecked(list) {
 document.getElementById("todos").addEventListener("click", function() {
     const text = document.getElementById("txt").value;
 });
-
-function strikeIt(todos) {
-    if (iscompleted = true) {
-        el = document.querySelector('#span-txt');
-        el.style.setProperty('text-decoration', 'line-through');
-    } else {
-        todos.style.setProperty('text-decoration', 'none');
-        enderTodos(todo);
-    }
-};

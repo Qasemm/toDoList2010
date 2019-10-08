@@ -200,3 +200,11 @@ input[type="checkbox"]:checked + label::after {
     display: flex;
     align-items: center;
 }
+
+.lineBottom {
+    margin-top: 23px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
