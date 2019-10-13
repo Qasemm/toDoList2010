@@ -12,15 +12,17 @@
 <body>
     <section>
         <div class="inpu">
-            <img src="./tdli.png" class="lis">
+            <img src="./dow.svg" class="lis">
             <input type="text" id="txt" placeholder="Type your to do list" oninput="">
             <img src="./plus.svg" class="plus" id="plus">
         </div>
         <div class="container" id="cont">
-            <img src="done.svg" class="img1" id="img1">
-            <span class="sp1">Complete all tasks</span>
-            <span class="sp2" onclick="clearChecked(todos)">Clear complete</span>
-            <div class="comple fix"></div>
+            <div class="fisrt-line">
+                <img src="done.svg" class="done" id="done">
+                <span class="sp1" id="alldone">Complete all tasks</span>
+                <span class="sp2" onclick="clearChecked(todos)">Clear completed</span>
+                <div class="comple fix"></div>
+            </div>
             <hr>
 
             <div class="todos" id="todos">
@@ -29,17 +31,18 @@
             </div>
             <hr class="lineBottom">
             <div class="left">
-                <span id="count" style="color:black">0</span>
-                <span class="sp3">task left</span>
+                <span class=""><strong id="count">0</strong> task left</span>
             </div>
             <div class="right">
-                <span class="sp4">All</span>
-                <span class="sp5">Uncomplete</span>
-                <span class="sp6">Complete</span></div>
+                <span class="sp4" onclick="all()">All</span>
+                <span class="sp5" onclick="uncompleteChecked(todos)">Uncomplete</span>
+                <span class="sp6" id="sp6" onclick="completeChecked(todos)">Complete</span></div>
             <div class="fix"></div>
         </div>
     </section>
     <script src="todo.js"></script>
 </body>
+
+</html>
 
 </html>
